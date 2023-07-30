@@ -1,89 +1,350 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>vish &mdash; Vishnupriyan T V</title>
+	<link rel = "icon" href = "images/favicon.ico" type = "image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Vishnupriyan T V" />
+	<meta name="author" content="Vishnupriyan" />
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/10.1.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/10.1.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/10.1.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/10.1.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/10.1.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/10.1.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/10.1.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/10.1.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/10.1.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/10.1.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+		
+	<div class="fh5co-loader"></div>
+	
+	<div id="page">	
+	<header id="fh5co-header" class="fixed-top d-flex justify-content-center align-items-center header-transparent js-fullheight" role="banner" style="background-image:url(cover_bg_3.jpg);" data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="text-center col-md-8 col-md-offset-2">
+					<div class="display-t js-fullheight">
+						<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
+							<div class="profile-thumb" style="background: url(images/user-3.jpeg);"></div>
+							<h1><span>Vishnupriyan T V</span></h1>
+							<h3 style="font-family: Space Mono; font-weight: 400;"><span>Data Analyst | Data Scientist</span></h3>
+							<p>
+								<ul class="fh5co-social-icons">
+									<li><a href="https://twitter.com/imVpriyan"><i class="fa fa-twitter" ></i></a></li>
+									<li><a href="https://www.linkedin.com/in/vishnupriyan-/"><i class="fa fa-linkedin"></i></a></li>
+									<li><a href="https://www.youtube.com/c/vishnupriyanFilms/videos"><i class="fa fa-youtube-play"></i></a></li>
+									<li><a href="https://www.instagram.com/asyou.vish/?igshid=MzRlODBiNWFlZA%3D%3D"><i class="fa fa-instagram"></i></a></li>
+									<li><a href="https://github.com/vishnupriyan123"><i class="fa fa-github"></i></a></li>	
+								</ul>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div id="fh5co-about" class="animate-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>Greetings!</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<ul class="info">
+						<li><span class="first-block">Full Name:</span><span class="second-block">Vishnupriyan T V</span></li>
+						<li><span class="first-block">Phone:</span><span class="second-block"><a href="tel:+919048914150">India : +919048914150</a></span></li>
+						<li><span class="first-block">&emsp;&emsp;&emsp;&emsp;</span><span class="second-block"><a href="tel:+447407696067">UK &emsp;: +447407696067</a></span></li>
+						<li><span class="first-block">Email:</span><span class="second-block"><a href="mailto:vishnupriyantvijayan@gmail.com"><u>vishnupriyantvijayan@gmail.com</u></a></span></li>
+						<li><span class="first-block">Address:</span><span class="second-block">Chingath House<br>Devathiyal Paramb <br>Thenhipalam P.O <br> Malappuram Dt.<br>PIN: 673636
+						</span></li>
+				</div>
+				<div class="col-md-8">
+					<h2 style="margin-left: 100px">Welcome to my portfolio!</h2>
+					<p style="margin-left: 100px; text-align:justify ; text-justify: inter-word">
+
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I'm Vishnupriyan, a tech savvy who is fast with computers and gadgets. 
+						With over two years of experience as a Data Analyst at Infosys Limited for prestigious clients like Mercedes Benz and Goldman Sachs.
+						<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;During this time, I honed my analytical skills, gained valuable insights, and contributed to data-driven decision-making processes for these renowned companies. 
+						However, my hunger for knowledge and my belief in the transformative power of technology drove me to explore new frontiers. Presently, I am fully immersed in the captivating realms of Artificial Intelligence and Data Science. As I strive to master these cutting-edge disciplines, I am determined to play a pivotal role in the ever-evolving and dynamic landscape of technology.
+						My mission is to create innovative solutions that address real-world challenges and drive progress in the techno world. 
+						<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Thank you for visiting my portfolio, and I hope you'll join me on this exhilarating journey of exploration and innovation in the world of technology. Let's shape the future together!</p><br><br>
+				</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+			<div class="row">
+				<div class="col-md-12 col-md-offset-0">
+					<ul class="timeline">
+						<li class="text-center timeline-heading animate-box">
+							<div><h3><b>Work Experience</b></h3></div><br><br>
+						</li>
+						<li class="timeline-inverted animate-box">
+							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Data Analyst / Systems Engineer</h3>
+									<span class="company">Infosys Limited : Jan 2023 - Aug 2023<br>(Bengaluru,India) </span>
+								</div>
+								<div class="timeline-body">
+									<p style="margin-right: 100px; text-align:justify ; text-justify: inter-word"><b>Mercedes Benz (Client)</b>
+										<br>• Designed and developed dynamic Power BI dashboards by integrating ServiceNow data, to support Mercedes Benz USA's operational unit's weekly Service Delivery audits.
+										<br>• Empowered stakeholders with actionable insights through interactive visualizations, enabling them to identify trends and make data-driven decisions.
+										<br>• Involved in the preparation of comprehensive Service Delivery Weekly/Monthly reports for the NAFTA & LATAM regions, supporting efficient and informed decision-making processes by interacting with respective service managers.</p>
+								</div>
+							</div>
+						</li>
+						<li class="animate-box timeline-unverted">
+							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Senior Systems Associate</h3>
+									<span class="company">Infosys Limited : Apr 2022 - Dec 2022<br>(Bengaluru,India) </span>
+								</div>
+								<div class="timeline-body">
+									
+									<p style="margin-left: 100px; text-align:justify ; text-justify: inter-word"><b>Goldman Sachs (Client)</b>
+										<br>• Led Infosys side of the e-Business prime department with four resources and handled a variety of tasks, including data analysis, visualization, escalation management, and technical support.
+										<br>• Assisted in managing data visualization in Salesforce while working with client managers to enhance the resolution rate of tickets logged in prime client technology support through analysis of the data retrieved from Salesforce.
+										<br>• Suggested solutions to higher authority for bringing balance to the the work-load of agents in each region across the globe by analysing and visualising the data with the help of dashboards in Salesforce.</p>
+								</div>
+							</div>
+						</li>
+						<li class="timeline-inverted animate-box">
+							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Systems Associate</h3>
+									<span class="company">Infosys Limited : Aug 2020 - March 2022<br>(Bengaluru,India) </span>
+								</div>
+								<div class="timeline-body">
+									<p>• Completed training in Python, MySQL, Mainframe (cobol, JCL) and Middleware (tomcat, IIS) from Infosys Mysore Campus
+										<br> <br> <b>Goldman Sachs (Client) </b><br> • Worked closely with Clients, Service providers and Internal stakeholders including Vice Presidents, Client Services, Technology, Operations, Legal and Compliance to define strategy and direction for the Prime Services platform. Constantly monitoring the systems and reengineer them to keep everything running as efficiently as possible.
+										<br>• Part of Operations that is integrated within our businesses and delivers Banking, Sales and Trading, and Asset management capabilities to all our clients.
+										<br>• Perform Operations that aids in the design of the technology, the information flows and the processes that make it all work.
+										<br>• Worked on reporting, resolving issues and onboarding Trade files for various businesses like Prime Brokerage, Futures & Options and Stock Lending.</p>
+								</div>
+							</div>
+						</li>
+						
+
+						<br><br>
+						<li class="text-center timeline-heading animate-box">
+							<div><h3>Education</h3></div><br>
+						</li>
+
+						<li class="animate-box timeline-unverted">
+							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">MSc Data Science and Artificial Intelligence</h3>
+									<span class="company">2023 - 2024</span>
+								</div>
+								<div class="timeline-body">
+									<p><b>Edge Hill University<br>Ormskirk, United Kingdom</b><br></p>
+								</div>
+							</div>
+						</li>
+						
+						<li class="timeline-inverted animate-box">
+							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">XII - CBSE</h3>
+									<span class="company">2014 - 2016</span>
+								</div>
+								<div class="timeline-body">						
+									<p><b>St.Joseph's Devagiri College,<br>Calicut University, India</b><br>First Class with an Overall grade B</p>
+								</div>
+							</div>
+						</li>
+						<li class="animate-box timeline-unverted">
+							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Bachelor of Computer Applications(BCA)</h3>
+									<span class="company">2017 - 2020</span>
+								</div>
+								<div class="timeline-body">
+									<p><b>Airport Senior Secondary School, Karipur, India</b><br> Completed my 12th with a percentage of 90.6</p><br>
+									
+								</div>
+							</div>	
+						</li>
+						<li class="text-center timeline-heading animate-box">
+							<p><a href="images\Resume.pdf" download class="btn btn-default btn-lg"><i class="bi bi-download"></i> RESUME</a></p>
+						</li>						
+			    	</ul>
+				</div>
+			
+		
+	</div>
+	
+
+	<div id="fh5co-skills" class="animate-box">
+		<div class="container">
+			<div class="row">
+				<div class="text-center col-md-8 col-md-offset-2 fh5co-heading">
+					<h2>Technical Skills</h2>
+				</div>
+			</div>
+			<div class="row row-pb-md">
+				<div class="text-center col-md-4 col-sm-6 col-xs-12">
+					<div class="chart" data-percent="90"><span><strong>Power BI</strong>90%</span></div>
+				</div>
+				<div class="text-center col-md-4 col-sm-6 col-xs-12">
+					<div class="chart" data-percent="90"><span><strong>MySQL</strong>90%</span></div>
+				</div>
+				<div class="text-center col-md-4 col-sm-6 col-xs-12">
+					<div class="chart" data-percent="80"><span><strong>Python</strong>80%</span></div>
+				</div>
+				<div class="text-center col-md-4 col-sm-6 col-xs-12">
+					<div class="chart" data-percent="80"><span><strong>Tableau</strong>80%</span></div>
+				</div>
+				<div class="text-center col-md-4 col-sm-6 col-xs-12">
+					<div class="chart" data-percent="70"><span><strong>Figma</strong>70%</span></div>
+				</div>
+				<div class="text-center col-md-4 col-sm-6 col-xs-12">
+					<div class="chart" data-percent="70"><span><strong>Java</strong>70%</span></div>
+				</div>
+				
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="progress-wrap">
+						<h3><span class="name-left">Power BI</span><span class="value-right">90%</span></h3>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"
+						  aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+						  </div>
+						</div>
+					</div>
+					<div class="progress-wrap">
+						<h3><span class="name-left">MySQL</span><span class="value-right">90%</span></h3>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-2 progress-bar-striped active" role="progressbar"
+						  aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+						  </div>
+						</div>
+					</div>
+					<div class="progress-wrap">
+						<h3><span class="name-left">Python</span><span class="value-right">80%</span></h3>
+						<div class="progress">
+							<div class="progress-bar progress-bar-4 progress-bar-striped active" role="progressbar"
+						  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+						  </div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="progress-wrap">
+						<h3><span class="name-left">Tableau</span><span class="value-right">80%</span></h3>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-5 progress-bar-striped active" role="progressbar"
+						  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+						  </div>
+						</div>
+					</div>
+					<div class="progress-wrap">
+						<h3><span class="name-left">Figma</span><span class="value-right">70%</span></h3>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-striped active" role="progressbar"
+						  aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+						  </div>
+						</div>
+					</div>
+					<div class="progress-wrap">
+						<h3><span class="name-left">Java</span><span class="value-right">70%</span></h3>
+						<div class="progress">
+							<div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"	
+						  aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+						  </div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<ul class="fh5co-social-icons">
+						<li style="font-family: Calibri;"><b>CONTACT ME : </b></li>
+						<li><a href="tel:+447407696067"><i class="material-icons">&#xe0b0;</i></a></li>
+						<li><a href="mailto:vishnupriyantvijayan@gmail.com"><i class="material-icons">&#xe0be;</i></a></li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Stellar Parallax -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Easy PieChart -->
+	<script src="js/jquery.easypiechart.min.js"></script>
+	<!-- Google Map -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
+	<script src="js/google_map.js"></script>
+	
+	<!-- Main -->
+	<script src="js/main.js"></script>
+
+	</body>
 </html>
